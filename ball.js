@@ -9,26 +9,27 @@ class Ball {
   }
 
   show(){
-    fill(0, 163, 204);
-    fill(179, 0, 0);
+    fill(2, 9, 20);
     noStroke();
     ellipse(this.x, this.y, this.d, this.d);
   }
 
   move(){
-    this.x += this.xVelocity;
-    this.y += this.yVelocity;
-    this.bounce();
-  }
+      this.x += this.xVelocity;
+      this.y += this.yVelocity;
+      // this.bounce();
+    }
 
-  bounce(){
-    if(this.x - this.r <= 0 || this.x + this.r >= width){
-      this.xVelocity *= -1;
-      sound();
-    }
-    if(this.y - this.r <= 0 || this.y + this.r >= height){
-      this.yVelocity *= -1;
-      sound();
-    }
-  }
+  // bounce(){
+  //   if(this.x - this.r <= 0 || this.x + this.r >= width){
+  //     this.xVelocity *= -1;
+  //     // sound();
+  //     console.log("contact");
+  //   }
+  //   if(this.y - this.r <= 0 || this.y + this.r >= height){
+  //     this.yVelocity *= -1;
+  //     // sound();
+  //     console.log("contact");
+  //   }
+  // }
 }

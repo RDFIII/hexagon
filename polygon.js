@@ -6,10 +6,12 @@ class Polygondwana {
 		this.npoints = npoints;
 	}
 
+
 	show() {
 		noStroke();
 		fill(0, 163, 204);
 
+    rotate(frameCount / -120.0);
 		let angle = TWO_PI / this.npoints;
 		beginShape();
 	  for (var a = 0; a < TWO_PI; a += angle) {
